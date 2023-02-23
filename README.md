@@ -1,6 +1,4 @@
-# NestJSApiBoilerplateJWT
-
-An API Boilerplate to create a ready-to-use REST API in seconds with NestJS 9.x and JWT Auth System :heart_eyes_cat:
+# DevOps Assignment
 
 ## Installation
 
@@ -8,19 +6,15 @@ An API Boilerplate to create a ready-to-use REST API in seconds with NestJS 9.x 
    $ npm install
 ```
 
-## Set Enviroment for secret key JWT and other configurations
+## Set Environment
 
 ```bash
    $ cp .env.example .env
 ```
 
-To set up on multiple environments, such as dev, stage or prod, we do as follows:
-
-```bash
-   $ cp .env.example .env.dev # or .env.stage, etc
-```
-
 ## Config settings .env for send notification when a user registers, forgot password or change password
+
+- Note use a free email provider API
 
 ```
    EMAIL_HOST=smtp.mailtrap.io
@@ -35,9 +29,9 @@ To set up on multiple environments, such as dev, stage or prod, we do as follows
    EMAIL_DEFAULT_LAYOUT='index'
 ```
 
-## Config settings .env for connect MySQL
+## Config settings .env for MySQL
 
-Once the database has been configured, start the Nest App via `npm run start:dev` it automatically synchronizes the entities so ready to use. :heart_eyes_cat:
+- Note that this app needs an MySQL instance in order to operate
 
 ```
    TYPEORM_CONNECTION = "mysql"
@@ -97,17 +91,6 @@ or
 ```bash
    $ npm run start:repl
 ```
-
-## Docker
-
-There is a `docker-compose.yml` file for starting MySQL with Docker.
-
-`$ docker-compose up db`
-
-After running, you can stop the Docker container with
-
-`$ docker-compose down`
-
 
 ## Url Swagger for Api Documentation
 
